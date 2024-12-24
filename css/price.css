@@ -1,0 +1,80 @@
+.container {
+    color: #cccccc;
+    font-family: "Nunito", sans-serif;
+    width: 100%;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, #24141c 0%, #24141c 25%, #24141c 51%, #521b27 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 20s ease infinite;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex2 {
+    border-right: 0.1px solid rgba(178, 170, 171, 0.185);
+}
+
+.flex_content {
+    padding: 5% 5%;
+    flex: 1;
+
+    h2 {
+        font-size: 4rem;
+        letter-spacing: 4px;
+        font-weight: 600;
+    }
+
+    h4 {
+        margin-top: 20px;
+        font-size: 2.3rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    ul {
+        padding-inline-start: 7%;
+        margin: 50px 0;
+    }
+
+    ul li {
+        font-weight: 200;
+        margin-top: 20px;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    button {
+        outline: none;
+        border: none;
+        background: #822127;
+        color: #cccccc;
+        width: 100%;
+        height: 60px;
+        font-family: "Nunito", sans-serif;
+        cursor: pointer;
+    }
+
+    a {
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+    }
+}
+
+.flex_content:nth-of-type(1) button {
+    background: transparent;
+    border: 1px solid #aa2b33;
+    color: #aa2b33;
+}
+
+@media screen and (max-width: 540px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .flex2 {
+        border: none;
+    }
+}

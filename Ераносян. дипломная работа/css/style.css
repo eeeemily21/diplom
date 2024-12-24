@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Nunito", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    background-image: url('https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2021/09/camara-2484451.jpg?tf=3840x');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-size: cover;
+    height: 100vh;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    max-width: 100vh;
+    margin: 0 auto;
+}
+
+.menu li {
+    width: 125px;
+    height: 50px;
+    letter-spacing: 3px;
+    transition: background-position-x 0.9s linear;
+    text-align: center;
+    margin-top: 25px;
+
+    a {
+        font-size: x-large;
+        font-size: 22px;
+        color: #323131;
+        text-decoration: none;
+        transition: all 0.45s;
+    }
+
+    &:hover a {
+        color: #ffffff;
+    }
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 65px 50px;
+    max-width: 700px;
+
+    h1 {
+        letter-spacing: 4px;
+        font-size: 6rem;
+    }
+
+    .data-phone {
+        margin-top: 50px;
+    }
+
+    span {
+        max-width: 400px;
+        margin-top: 30px;
+        font-size: large;
+        letter-spacing: 3px;
+    }
+
+    .icon {
+        display: flex;
+        gap: 8px;
+        margin-top: 10px;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
+    }
+
+    .email {
+        margin-top: 5px;
+    }
+}
+
+.wrapper-text-content {
+    display: flex;
+}
+
+/* .foto {
+    height: 800px;
+    width: 100%;
+    margin-top: 65px;
+    background-image: url(img/me/priroda-rosa-ortega-devushka-kamera.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: contain;
+} */
+
+/* .boxes {
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: hotpink;
+} */
+
+/* .show {
+    display: block;
+} */
+
+/* .block {
+    height: 40px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(21, 23, 20);
+}
+
+.block p {
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 35px;
+    animation: text 15s infinite linear;
+    padding-left: 100%;
+    white-space: nowrap;
+} */
+
+@keyframes text {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-160%, 0);
+    }
+}
